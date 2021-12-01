@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dropdown Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+
+<body class="light">
+  <div class="wrapper">
+    <div class="container">
+    <nav>
+        <div class="icons">
+			<a href="#" onclick="openNav()">
+				<img class="menu" id="menu" src="./logos/darkMenu.png" alt="">
+			</a>
+			<a href="#" onclick="openNav()">
+				<img class="lightMenu" id="lightMenu" src="./logos/lightMenu.png" alt="">
+			</a>
+        </div>
+     
+		<div class="content">
+			<div class="logoLeft">
+				<a href="#">
+					<img src="./logos/Frame.png" alt="logoLeft">
+				</a>
+			</div>
+			<ul class="links transition" id="links">
+				<li>
+					<a href="#" class="delete">Home</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./logos/about.png" alt="">About
+					</a>
+				</li>
+				<li>
+					<a href="/htmlpages/deskLogged.html">
+						<img src="./logos/LogIn.png" alt="">Log In
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./logos/RCPfxk.png" alt="">Help
+					</a>
+					<ul>
+						<li>
+							<a href="#">
+								<img class="effect" src="./logos/Privacy.png" alt="">Privacy Policy
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img class="effect" src="./logos/Disclaimer.png" alt="">Terms of service
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img class="effect" src="./logos/Cookie.png" alt="">GDPR
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./logos/Lab.png" alt="">Lab-Free Chemistry
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./logos/Language.png" alt="">EN
+					</a>
+					<ul>
+						<li>
+							<a href="#">English</a>
+						</li>
+						<li>
+							<a href="#">Български</a>
+						</li>
+						<li>
+							<a href="#">Bosanski</a>
+						</li>
+						<li>
+							<a href="#">Čeština</a>
+						</li>
+						<li>
+							<a href="#">Deutsch</a>
+						</li>
+						<li>
+							<a href="#">Ελληνικά</a>
+						</li>
+						<li>
+							<a href="#">Hrvatski</a>
+						</li>
+						<li>
+							<a href="#">Magyar</a>
+						</li>
+						<li>
+							<a href="#">Македонски</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+    </nav>
+    <div class="logo">
+		<a href="#">
+			<img src="./logos/mainLogo.png" alt="logo">
+		</a>
+	</div>
+ </div>
+ </div>
+
+
+<div id="myNav" class="backgroundImage">
+	<a class="closebtn" href="javascript:void(0)" onclick="closeNav()">
+		<img id="leftChevron" class="leftChevron" src="./logos/leftChevron.png" alt="">
+	</a>
+	<div class="backgroundImage-content">
+		<ul>
+			<li>
+				<a href="#">
+					<img class="effect" src="./logos/about.png" alt="">About
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" onclick="openNavLogin()">
+					<img class="effect" src="./logos/logIn.png" alt="">Log in
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" onclick="openNavHelp()">
+					<img class="effect" src="./logos/help.png" alt="">Help
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img class="effect" src="./logos/lab.png" alt="">Lab-Free Chemistry
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" onclick="openNavLanguages()">
+					<img class="effect" src="./logos/languages.png" alt="">EN
+				</a>
+			</li>
+		</ul>
+    </div>
+	<!--
+	<div class="logo-mobile">
+		<a href="#">
+			<img src="./logos/mainLogo.png" alt="logo">
+		</a>
+	</div>
+	-->
+</div>
+
+<div id="myNavLogin" class="backgroundImage">
+	<a class="closebtn" href="javascript:void(0)" onclick="closeNavLogin()">
+		<img id="leftChevron" class="leftChevron" src="./logos/leftChevron.png" alt="">
+	</a>
+	<div class="backgroundImage-content">
+		<ul>
+			<li>
+				<a href="#">
+					<img class="effect" src="./logos/about.png" alt="">About
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" onclick="openNavProfile()">
+				<img class="effect" src="./logos/profile.png" alt="">Profile
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" onclick="openNavHelp()">
+					<img class="effect" src="./logos/help.png" alt="">Help
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img class="effect" src="./logos/lab.png" alt="">Lab-Free Chemistry
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" onclick="openNavLanguages()">
+					<img class="effect" src="./logos/languages.png" alt="">EN
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div id="myNavHelp" class="backgroundImage">
+	<a class="closebtn" href="javascript:void(0)" onclick="closeNavHelp()">
+		<img id="leftChevron" class="leftChevron" src="./logos/leftChevron.png" alt="">
+	</a>
+	<div class="backgroundImage-content">
+		<ul>
+			<li>
+				<a href="#">
+					<img class="effect" src="./logos/privacy.png" alt="">Privacy Policy
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				<img class="effect" src="./logos/disclaimer.png" alt="">Disclaimer
+			</a>
+			</li>
+			<li>
+				<a href="#">
+					<img class="effect" src="./logos/cookie.png" alt="">Cookie policy
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div id="myNavLanguages" class="backgroundImage">
+	<a class="closebtn" href="javascript:void(0)" onclick="closeNavLanguages()">
+		<img id="leftChevron" class="leftChevron" src="./logos/leftChevron.png" alt="">
+	 </a>
+	<div class="backgroundImage-content">
+		<ul>
+			<li>
+				<a href="#">English</a>
+			</li>
+			<li>
+				<a href="#">Български</a>
+			</li>
+			<li>
+				<a href="#">Bosanski</a>
+			</li>
+			<li>
+				<a href="#">Čeština</a>
+			</li>
+			<li>
+				<a href="#">Deutsch</a>
+			</li>
+			<li>
+				<a href="#">Ελληνικά</a>
+			</li>
+			<li>
+				<a href="#">Hrvatski</a>
+			</li>
+			<li>
+				<a href="#">Magyar</a>
+			</li>
+			<li>
+				<a href="#">Македонски</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div id="myNavProfile" class="backgroundImage">
+	<a class="closebtn" href="javascript:void(0)" onclick="closeNavProfile()">
+		<img id="leftChevron" class="leftChevron" src="./logos/leftChevron.png" alt="">
+	</a>
+	<div class="backgroundImage-content">
+		<ul>
+			<li>
+				<a href="#">
+					<img class="effect" src="./logos/experiments.png" alt="">Experiments
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img class="effect" src="./logos/downloads.png" alt="">Downloads
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img class="effect" src="./logos/settings.png" alt="">Settings
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0)" onclick="closeNavProfile()">
+					<img class="effect" src="./logos/logOut.png" alt="">Log Out
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
